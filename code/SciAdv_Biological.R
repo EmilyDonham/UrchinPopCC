@@ -32,13 +32,6 @@ datUrchinHealthy$logWI = log(datUrchinHealthy$WetWtI)
 datUrchinHealthy$logBI = log(datUrchinHealthy$BuoyWtI)  
 datUrchinHealthy$logWF = log(datUrchinHealthy$WetWtF)  
 
-#Check relationship between growth and initial wt is linear
-logWImdl <- lm(RGR2 ~ logWI, data = datUrchinHealthy)
-summary(logWImdl)
-
-logBImdl <- lm(RGRB2 ~ logBI, data = datUrchinHealthy)
-summary(logBImdl)
-
 #Subset just the "local adaptation" experiment data
 datUrchinHealthy_current <- subset(datUrchinHealthy, datUrchinHealthy$CF == 'C')
 

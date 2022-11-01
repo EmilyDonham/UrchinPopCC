@@ -1184,7 +1184,7 @@ Fig_scatter <- ggarrange(NoCAFig, SoCAFig, labels = c("(B)", "(C)"), ncol = 1, n
                        common.legend = FALSE, align = "hv")
 Fig_scatter
 
-ggsave(plot = Fig1_rev, file = "POPUrchin_NoExp2.png", 
+ggsave(plot = Fig1_rev, file = "Fig1_rev.png", 
        type = "cairo-png",  bg = "white",
        width = 15, height = 25, units = "cm", dpi = 600)
 
