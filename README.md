@@ -1,6 +1,6 @@
 # UrchinPopCC
 
-This is a repository for code and data used in the analysis of the manuscript entitled: "Population specific vulnerability to ocean change in a multi stressor environment".
+This is a repository for code and data used in the analysis of the manuscript: "Population specific vulnerability to ocean change in a multi stressor environment".
 
 All data and R code used to obtain the results are presented in the Data and R Code folders. R packages needed to process the data are provided in the respective heading of each R file. All Figures presented in the manuscript were created using the following R files:
 
