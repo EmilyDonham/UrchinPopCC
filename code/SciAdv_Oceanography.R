@@ -1099,12 +1099,12 @@ PCA <-ggplot(data=PCAAve, aes(x=PC1, y=PC2, fill = WS, shape = CF)) +
   geom_errorbar(aes(ymin = PC2-sd.y, ymax = PC2+sd.y),color = "black", width = 0.2, alpha = 2/3)+
   geom_errorbar(aes(xmin = PC1-sd.x, xmax = PC1+sd.x),color = "black", width = 0.2, alpha = 2/3)+
   geom_point(color = "black", size = 6) + 
-  annotate("segment", x = 0, xend = Ar$PC1[1]*43, y = 0, yend = Ar$PC2[1]*43, colour = "black", size=0.5, alpha=0.9, arrow=arrow())+
-  annotate("segment", x = 0, xend = Ar$PC1[2]*6.05, y = 0, yend = Ar$PC2[2]*6.05, colour = "black", size=0.5, alpha=0.9, arrow=arrow())+
-  annotate("segment", x = 0, xend = Ar$PC1[3]*3.5, y = 0, yend = Ar$PC2[3]*3.5, colour = "black", size=0.5, alpha=0.9, arrow=arrow())+
-  annotate("text", x = -1.42, y = 3.02, label = "pH")+
-  annotate("text", x = -6.01, y = -1.7, label = "Temperature")+
-  annotate("text", x = -.95, y = 3.50, label = "Dissolved Oxygen")+
+  annotate("segment", x = 0, xend = Ar$PC1[1], y = 0, yend = Ar$PC2[1], colour = "black", size=0.5, alpha=0.9, arrow=arrow())+
+  annotate("segment", x = 0, xend = Ar$PC1[2], y = 0, yend = Ar$PC2[2], colour = "black", size=0.5, alpha=0.9, arrow=arrow())+
+  annotate("segment", x = 0, xend = Ar$PC1[3], y = 0, yend = Ar$PC2[3], colour = "black", size=0.5, alpha=0.9, arrow=arrow())+
+  annotate("text", x = Ar$PC1[1]+.18, y = Ar$PC2[1]+.1, label = "pH")+
+  annotate("text", x = Ar$PC1[2]-.1, y = Ar$PC2[2]-.1, label = "Temperature")+
+  annotate("text", x = Ar$PC1[3]-.1, y = Ar$PC2[3]+.1, label = "Dissolved Oxygen")+
   theme(legend.key = element_rect(colour = NA, fill = NA),)  +
   theme_bw() +
   theme(panel.border = element_rect(colour = "black", fill=NA, size=1.25)) +
